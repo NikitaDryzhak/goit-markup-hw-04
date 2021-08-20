@@ -41,7 +41,7 @@
 		<section class="hero-screen">
 			<h1 class="title-primary">Эффективные решения <br> для вашего бизнеса</h1>
 			
-			<button type="button" class="hero-screen-btn">Заказать услугу</button>
+			<button type="button" class="hero-screen-btn" data-modal-open>Заказать услугу</button>
 		
 		</section>
 
@@ -105,10 +105,25 @@
 <section class="tasks section">
 	<div class="container">
 			<h2 class="title-secondary">Чем мы занимаемся</h2>
-			<ul class="list">
-				<li class="tasks-image"><img src="./images/image1.jpg" width="370" alt="Computer"></li>
-				<li class="tasks-image"><img src="./images/image2.jpg" width="370" alt="Phone"></li>
-				<li class="tasks-image"><img src="./images/image3.jpg" width="370" alt="Tablet"></li>
+			<ul class="tasks-list">
+				<li class="tasks-image">
+					<img src="./images/image1.jpg" width="370" alt="Computer">
+					<div class="tasks-cover-text">
+						<span>Десктопные приложения</span>
+					</div>
+				</li>
+				<li class="tasks-image">
+					<img src="./images/image2.jpg" width="370" alt="Phone">
+				<div class="tasks-cover-text">
+					<span>Мобильные приложения</span>
+				</div>
+				</li>
+				<li class="tasks-image">
+					<img src="./images/image3.jpg" width="370" alt="Tablet">
+				<div class="tasks-cover-text">
+					<span>Дизайнерские решения</span>
+				</div>
+				</li>
 			</ul>
 	</div>
 	</section>
@@ -120,7 +135,7 @@
 		<ul class="list-team">
 				<li class="team-human"><img src="./images/image4.jpg" width="270" alt="Human1">
 					<div class="team-employee"><h3><b>Игорь Демьяненко</b></h3>
-					<p>Product Designer</p></div>
+					<p>Product Designer</p>
 					<ul class="social-links">
 						<li class="team-social-list"><a class="team-link-btn" href="">
 								<svg class="team-link">
@@ -142,11 +157,11 @@
 									<use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
 								</svg></a>
 						</li>
-					</ul>
+					</ul></div>
 				</li>
 				<li class="team-human"><img src="./images/image5.jpg" width="270" alt="Human2">
 					<div class="team-employee"><h3><b>Ольга Репина</b></h3>
-					<p>Frontend Developer</p></div>
+					<p>Frontend Developer</p>
 					<ul class="social-links">
 						<li class="team-social-list"><a class="team-link-btn" href="">
 								<svg class="team-link">
@@ -168,11 +183,11 @@
 									<use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
 								</svg></a>
 						</li>
-					</ul>
+					</ul></div>
 				</li>
 				<li class="team-human"><img src="./images/image6.jpg" width="270" alt="Human3">
 					<div class="team-employee"><h3><b>Николай Тарасов</b></h3>
-					<p>Marketing</p></div>
+					<p>Marketing</p>
 					<ul class="social-links">
 						<li class="team-social-list"><a class="team-link-btn" href="">
 								<svg class="team-link">
@@ -194,11 +209,11 @@
 									<use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
 								</svg></a>
 						</li>
-					</ul>
+					</ul></div>
 				</li>
 				<li class="team-human"><img src="./images/image7.jpg" width="270" alt="Human4">
 					<div class="team-employee"><h3><b>Михаил Ермаков</b></h3>
-					<p>UI Designer</p></div>
+					<p>UI Designer</p>
 					<ul class="social-links">
 						<li class="team-social-list"><a class="team-link-btn" href="">
 								<svg class="team-link">
@@ -220,7 +235,7 @@
 									<use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
 								</svg></a>
 						</li>
-					</ul>
+					</ul></div>
 				</li>
 		</ul>
 		</div>
@@ -282,5 +297,17 @@
 				</a></li></ul>
 				</div>
 		</footer>
+		<div class="backdrop is-hidden" data-modal>
+			<div class="modal">
+				<button class="btn-close" data-modal-close>
+					<svg class="btn-modal-close">
+						<use href="./images/symbol-defs-1.svg#icon-ellipse">
+						
+						</use>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<script src="./js/modal.js"></script>
 	</body>
 </html>
